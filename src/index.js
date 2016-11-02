@@ -1,7 +1,7 @@
 import editor from "./editor.vue";
 import moduleText from "./modules/text/index";
 import moduleFont from "./modules/font/index";
-import moduleColor from "./modules/color/index";
+import moduleColor from "./modules/colorpicker/index";
 import moduleAlign from "./modules/align/index";
 import moduleList from "./modules/list/index";
 import moduleLink from "./modules/link/index";
@@ -13,8 +13,9 @@ import moduleEraser from "./modules/eraser/index";
 import moduleUndo from "./modules/undo/index";
 import moduleFullScreen from "./modules/full-screen/index";
 import moduleInfo from "./modules/info/index";
-import i18nZhCn from "./i18n/zh-cn";
+// import i18nZhCn from "./i18n/zh-cn";
 import i18nEnUs from "./i18n/en-us";
+import i18nEsEs from "./i18n/es-es";
 import arrayFill from "./array-polyfill";
 
 /**
@@ -105,13 +106,13 @@ exports.install = (Vue, options) => {
     })
 
     //i18n
-    let i18n = {"zh-cn": i18nZhCn, "en-us": i18nEnUs}
+    let i18n = {"es-es": i18nEsEs, "en-us": i18nEnUs}
     let customI18n = options.i18n || {}
     Object.keys(customI18n).forEach((key)=> {
         i18n[key] = i18n[key] ? Vue.util.extend(i18n[key], customI18n[key]) : customI18n[key]
     })
-    let language = options.language || "en-us"
-    let locale = i18n[language] || i18n["en-us"]
+    let language = options.language || "es-es"
+    let locale = i18n[language] || i18n["es-es"]
 
 
     let component = Vue.extend(editor).extend({
