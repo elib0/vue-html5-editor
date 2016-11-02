@@ -2,8 +2,7 @@ var path = require("path")
 var package = require("./package.json")
 var webpack = require("webpack")
 module.exports = {
-    context: __dirname + "/src",
-    entry: "./index.js",
+    entry: "./src/index.js",
     output: {
         path: __dirname + "/dist",
         filename: "vue-html5-editor.js",
