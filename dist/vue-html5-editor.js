@@ -1493,9 +1493,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	// </template>
 	// <script>
 	exports.default = {
-	    props: {
-	        fonts: Array
-	    },
 	    data: function data() {
 	        return {
 	            nameList: ["Arvil", "Calibri", "Signika", "Signika Light", "Signika Semi", "Helvetica Neue", "Helvetica", "Arial", "sans-serif", "Verdana", "Georgia", "Times New Roman", "Trebuchet MS", "Courier New", "Impact", "Comic Sans MS"],
@@ -1503,11 +1500,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        };
 	    },
 
-	    ready: function ready() {
-	        if (this.fonts.length > 0) {
-	            this.nameList.concat(this.fonts);
-	        }
-	    },
 	    methods: {
 	        setFontName: function setFontName(name) {
 	            this.$parent.execCommand("fontName", name);

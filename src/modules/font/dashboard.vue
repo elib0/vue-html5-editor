@@ -33,9 +33,6 @@
 </template>
 <script>
     export default {
-        props: {
-            fonts: Array
-        },
         data(){
             return {
                 nameList: [
@@ -59,11 +56,6 @@
                 lineHeightList: [
                     "1.0", "1.5", "1.8", "2.0", "2.5", "3.0"
                 ]
-            }
-        },
-        ready: function () {
-            if (this.fonts.length > 0) {
-                this.nameList.concat(this.fonts)
             }
         },
         methods: {
