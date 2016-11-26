@@ -52,7 +52,6 @@
                     "Georgia",
                     "Times New Roman",
                     "Trebuchet MS",
-                    "Microsoft JhengHei",
                     "Courier New",
                     "Impact",
                     "Comic Sans MS"

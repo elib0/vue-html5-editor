@@ -1115,15 +1115,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        autoHeight: {
 	            type: Boolean,
 	            default: true
-	        },
-	        classes: {
-	            type: Array,
-	            default: []
-	        },
-	        fonts: {
-	            type: Array,
-	            default: []
 	        }
+	        // ,classes: {
+	        //     type: Array,
+	        //     default: []
+	        // },
+	        // fonts: {
+	        //     type: Array,
+	        //     default: []
+	        // }
 	    },
 	    data: function data() {
 	        return {
@@ -1498,7 +1498,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    data: function data() {
 	        return {
-	            nameList: ["Arvil", "Calibri", "Signika", "Signika Light", "Signika Semi", "Helvetica Neue", "Helvetica", "Arial", "sans-serif", "Verdana", "Georgia", "Times New Roman", "Trebuchet MS", "Microsoft JhengHei", "Courier New", "Impact", "Comic Sans MS"],
+	            nameList: ["Arvil", "Calibri", "Signika", "Signika Light", "Signika Semi", "Helvetica Neue", "Helvetica", "Arial", "sans-serif", "Verdana", "Georgia", "Times New Roman", "Trebuchet MS", "Courier New", "Impact", "Comic Sans MS"],
 	            lineHeightList: ["1.0", "1.5", "1.8", "2.0", "2.5", "3.0"]
 	        };
 	    },

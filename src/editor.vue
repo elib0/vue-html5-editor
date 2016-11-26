@@ -43,15 +43,15 @@
             autoHeight: {
                 type: Boolean,
                 default: true
-            },
-            classes: {
-                type: Array,
-                default: []
-            },
-            fonts: {
-                type: Array,
-                default: []
             }
+            // ,classes: {
+            //     type: Array,
+            //     default: []
+            // },
+            // fonts: {
+            //     type: Array,
+            //     default: []
+            // }
         },
         data () {
             return {
