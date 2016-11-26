@@ -19,7 +19,7 @@
     </label>
   </div>
   <div>
-    <color-picker :colors.sync="color"></color-picker>
+    <color-picker @change-color="onChangeColor" :colors.sync="color"></color-picker>
   </div>
 </template>
 <script>
@@ -54,11 +54,15 @@ export default {
       color: defaultProps
     }
   },
+  methods: {
+    onChangeColor: function (val) {
+      console.log(val)
+    }
+  },
   watch:{
     color (val, oldVal) {
-      console.log(val,oldVal)
-      
-      // this.$parent.execCommand(this.command, val)
+      // console.log(val,oldVal)
+      // this.$parent.execCommand(this.command, val.hex)
     }
   },
   components: {
