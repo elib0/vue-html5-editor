@@ -1,5 +1,5 @@
 /*!
- * Vue-html5-editor 0.5.3
+ * Vue-html5-editor 0.5.4
  * https://github.com/PeakTai/vue-html5-editor
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -4144,7 +4144,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	    data: function data() {
 	        return {
-	            version: ("0.5.3")
+	            version: ("0.5.4")
 	        };
 	    }
 	};
